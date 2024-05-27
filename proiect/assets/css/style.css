@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poetsen+One&display=swap');
+
+.nav-buttons{
+    margin-left:55%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poetsen One", sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6{
+    color:#D8D8D8;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    color: rgb(255,35,133);
+}
+
+.navbar{
+    font-size: 16p;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    background: white;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 10px;
+}
+
+.navbar .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.navbar i{
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar .navbar-nav .nav-link.active
+.navbar i:hover{
+    color: rgb(255,35,133);
+    transition: 0.2s ease;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transform:  0.4s ease;
+    /* font-weight: 500;  de sters daca nu merge */
+    cursor: pointer;
+    margin-left: 5px;
+} 
+
+#home{
+    background-image: url('../imgs/poza_fundal.jpeg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    /* 
+    background-position-x: ;
+    background-position-y: ;
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span{
+    color:rgb(255,35,133); 
+}
+
+/* Product */
+
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+footer{
+    background-color: #222222;
+}
+
+footer h5{
+    color: #D8D8D8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 1.2rem;
+    color: #999;
+    text-decoration: none;
+}
+
+footer li a:hover{
+    color: #D8D8D8;
+}
+
+footer .copyright a{
+    color:black;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    transition:  0.3 ease;
+    margin: 0 5;
+}
+
+footer .copyright a:hover{
+    color: white;
+    background-color: rgb(255,35,133);
+}
+
+footer p{
+    color:white;
+}
+
+footer .copyright img{
+    width: 40%;
+}
+
+.logo{
+    height: 95px;
+}
+
+.navbar .brand{
+    color: rgb(255,35,133);
+    margin: 3px 5px;
+    font-size: 1.5rem;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24;
+    cursor: pointer;
+}
+
+/* Cart */
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(255,35,133);
+}
+
+.cart td{
+    padding: 10px 20px;
+}
+
+.cart td img{
+    width: 120px;
+    height: 170px;
+    margin-right: 10px;
+}
+
+.cart td a{
+    color: rgb(255,35,133);
+
+}
+
+.cart .remove-btn{
+    color:rgb(255,35,133);
+    text-decoration: none;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    width: 100%;
+}
+
+.cart .product-info p{
+    margin: 3px;
+}
+
+.cart td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid rgb(255,35,133);
+
+}
+
+.checkout-btn{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(255,35,133);
+    color: white;
+}
+
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+/* Login */
+
+#login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgb(255,35,133);
+
+}
+
+#login-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#login-form #login-btn{
+    background-color: rgb(255,35,133);
+    color: white;
+}
+
+#login-form #register-url{
+    color:rgb(255,35,133);
+}
+
+/* Register */
+
+#register-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgb(255,35,133);;
+}
+
+#register-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#register-form #register-btn{
+    background-color: rgb(255,35,133);
+    color: white;
+}
+
+#register-form #login-url{
+    color:rgb(255,35,133);
+}
+
+/* Account */
+
+#account-form{
+    width: 50%;
+    margin: 25px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
+#account-form input{
+    margin: 5px auto;
+}
+
+#account-form #change-pass-btn{
+    color:white;
+    background-color: rgb(255,35,133);
+}
+
+.account-info #orders-btn,#logout-btn{
+    color: rgb(255,35,133);
+    text-decoration: none;
+}
+
+/* Orders */
+
+.orders table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.orders th{
+    text-align: center;
+    padding:  5px 10px;
+    color:white;
+    background-color: rgb(255,35,133);
+}
+
+.orders th:nth-child(1){
+    text-align: left;
+}
+
+.orders td{
+    padding: 10px 20px;
+}
+
+.orders td img{
+    width: 80px;
+    height: 130px;
+    margin-right: 10px;
+}
+
+.orders td{
+    text-align: center;
+}
+
+.orders .order-details-btn{
+    color:white;
+    background-color: rgb(255,35,133);
+}
+/* Checkout */
+
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width:48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element{
+    width: 96.3%;
+}
+
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#checkout-form #checkout-btn{
+    color: white;
+    background-color: rgb(255,35,133);
+}
+
+/* Contact */
+
+#contact span{
+    color:rgb(255,35,133);
+}
+
+/* Search */
+#search {
+    padding: 20px 0;
+}
+
+#search .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#search .row {
+    width: 100%;
+    display: flex;
+}
+
+#search .form-check-label {
+    margin-left: 10px;
+}
+
+#search input[type="range"] {
+    width: 100%;
+}
+
+#search .form-group {
+    width: 100%;
+    text-align: left;
+}
+
+/* Centering pagination */
+.pagination {
+    justify-content: center;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.pagination a {
+    color: rgb(255,35,133);
+}
+
+.pagination li:hover a {
+    color: white;
+    background-color: rgb(255,35,133);
+}
+
+#search {
+    width: 25%; /* Adjust this width as needed */
+}
+
+#shop {
+    width: 70%; /* Adjust this width as needed */
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-between;
+}
